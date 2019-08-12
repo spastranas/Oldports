@@ -39,7 +39,7 @@
             }); // sets the html in the div to an image tag with the link
             
             var PictureDataCell = ElementForPicturedata.append("h5");
-            PictureDataCell.text("("+ city + " "+ state+")");
+            PictureDataCell.text( city + ", "+ state);
 
     })   ;
    

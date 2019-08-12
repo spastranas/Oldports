@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Ubuntu, roboto;
+    font-family: Helvetica, roboto;
   }
   
   html,
@@ -26,8 +26,9 @@
     transform: rotate(90deg);
     margin-top: 65px;
       }
-    .thumbnail {background-color: rgb(238, 238, 248);
-                width: 350px;
+    .thumbnail {background-color:gray;
+                /* width: 400px; */
+                min-width: 420px;
               height:400px;}
 
   .ppcont{width:200px;}
@@ -35,6 +36,7 @@
 .title {
 font-size: 1cm;
 text-align: center;
+font-size:5vw;
 }
 
 .legend {
@@ -54,7 +56,7 @@ text-align: center;
     min-height: 100%;
     padding-bottom: 130px;
     overflow: auto;
-    background-color: lightblue
+    background-image: url("/static/Images/StaticPics/background-stripes.png");
   }
   
   /* The footer is positioned at the bottom of the page */
@@ -80,16 +82,17 @@ text-align: center;
   .navbar {
     padding: 5px;
     margin: 0;
+    background-image: url("/static/Images/StaticPics/background-stripes.png");
   }
   
-  /* This CSS styles the ufo icon in the navbar */
+  /* This CSS styles the ufo icon in the navbar
   .nav-ufo {
     position: absolute;
     bottom: 5px;
     left: 150px;
     width: 35px;
     color: white;
-  }
+  } */
   
   /* Adding styles to the aside and filter form */
   .ufo-form {
@@ -133,14 +136,17 @@ text-align: center;
   /* The styles for the parallax */
   .hero {
     position: relative;
-    height: 70px;
-    padding: 20px;
+    height: 150px;
+    /* padding: 20px; */
     margin: 0;
     background: black;
-    background-image: url("/static/Images/IMG_3416.jpg"); 
+    background-image: url("/static/Images/StaticPics/header.jpg"); 
     background-attachment: fixed;
-    background-position: bottom center;
-     background-size: cover; 
+    background-position: top center;
+    /* background-position:bottom center; */
+     /* background-size: cover;  */
+     background-size: 1500px 500px;
+     /* background-repeat: no-repeat; */
   }
  .footer h8{color: white;}
  .icon {color: white;}
@@ -279,7 +285,8 @@ text-align: center;
       ont-size: 1rem;
     }
     to {color: rgb(238, 238, 248);
-      font-size: 5.5rem;
+      /* font-size: 5.5rem; */
+      font-size:4vw;
       opacity: 1;
     
     }
@@ -305,20 +312,20 @@ text-align: center;
       opacity: 1;
     }
   }
-
-  @keyframes example {
+ /* The element to apply the animation to */
+  /* @keyframes example {
     0%   {left:0px; top:0px;}
     35%  {background-color:yellow; left:200px; top:0px;}
     35%  {background-color:blue; right:200px; top:0px;}
     100% { left:0px; top:0px;}
   }
   
-  /* The element to apply the animation to */
+ 
   .btn {
     
     position: relative;
     animation-name: example;
     animation-duration: 4s;
-  }
+  } */
 
 
