@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: Helvetica, roboto;
+    
   }
   
   html,
@@ -29,7 +30,7 @@
     .thumbnail {background-color:gray;
                 /* width: 400px; */
                 min-width: 420px;
-              height:400px;}
+              height:450px;}
 
   .ppcont{width:200px;}
 
