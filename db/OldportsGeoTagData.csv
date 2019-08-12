@@ -1,23 +1,132 @@
 FileAddress,ImageTimeStamp,city,country,county,landmark,latitude,longitude,state,zipcode
-../static/images/IMG_3416.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
-../static/images/IMG_3421.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
-../static/images/IMG_3430.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
-../static/images/IMG_3573.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Downtown West, Minneapolis, MN, United States",44.98036,-93.26508,MN,55401
-../static/images/IMG_3574.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
-../static/images/IMG_3660.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Downtown West, Minneapolis, MN, United States",44.98036,-93.26508,MN,55401
-../static/images/IMG_3680.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Downtown West, Minneapolis, MN, United States",44.98036,-93.26508,MN,55401
-../static/images/IMG_3695.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
-../static/images/IMG_3698.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
-../static/images/IMG_3712.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
-../static/images/IMG_3731.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
-../static/images/IMG_3820.jpg,2019-07-16,St Paul,USA,Ramsey,"West 7th, St Paul, MN, United States",44.93077,-93.12225,MN,55102
-../static/images/IMG_3822.jpg,2019-07-16,St Paul,USA,Ramsey,"West 7th, St Paul, MN, United States",44.93077,-93.12225,MN,55102
-../static/images/IMG_3823.jpg,2019-07-16,St Paul,USA,Ramsey,"West 7th, St Paul, MN, United States",44.93077,-93.12225,MN,55102
-../static/images/IMG_3905.jpg,2019-07-16,St Paul,USA,Ramsey,"West 7th, St Paul, MN, United States",44.93077,-93.12225,MN,55102
-../static/images/IMG_3947.jpg,2019-07-16,St Paul,USA,Ramsey,"Concord-Robert, St Paul, MN, United States",44.93586,-93.07428,MN,55107
-../static/images/IMG_3996.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Whittier, Minneapolis, MN, United States",44.95731,-93.28044,MN,55404
-../static/images/IMG_4128.jpg,2019-07-16,Roseville,USA,Ramsey,"Roseville, MN, United States",45.02173,-93.14928,MN,55113
-../static/images/IMG_4174.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
-../static/images/IMG_4188.jpg,2019-07-16,St Paul,USA,Ramsey,"Selby Ave, St Paul, MN 55104, United States",44.94658,-93.12646,MN,55104
-../static/images/IMG_4235.jpg,2019-07-16,Richfield,USA,Hennepin,"Richfield, MN, United States",44.88109,-93.26792,MN,55423
-../static/images/IMG_4358.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/away_1238.jpg,2019-07-16,Dallas,USA,Dallas,"Historic District, Dallas, TX, United States",32.77828,-96.79485,TX,75201
+../static/images/away_5142.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/blur_1261.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/blur_1380.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/blur_1382.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/blur_1495.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/blur_4660.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/crumple_140.jpg,2019-07-16,San Francisco,USA,San Francisco,"Soma, San Francisco, CA, United States",37.77654,-122.40756,CA,94103
+../static/images/crumple_495.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/fun_5043.jpg,2019-07-16,New York,USA,New York,"Theater District-Times Square, New York, NY, United States",40.75889,-73.98482,NY,10036
+../static/images/fun_5348.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/fun_5860.jpg,2019-07-16,San Francisco,USA,San Francisco,"Tenderloin, San Francisco, CA, United States",37.78513,-122.41451,CA,94102
+../static/images/fun_6156.jpg,2019-07-16,St Paul,USA,Ramsey,"West 7th, St Paul, MN, United States",44.93077,-93.12225,MN,55102
+../static/images/fun_6238.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/fun_E4173.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/garbage_288.jpg,2019-07-16,St Paul,USA,Ramsey,"Energy Park, St Paul, MN, United States",44.97094,-93.15482,MN,55108
+../static/images/garbage_514.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/garbage_64.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Hawthorne, Minneapolis, MN, United States",45.0059,-93.28415,MN,55411
+../static/images/garbage_854.jpg,2019-07-16,San Francisco,USA,San Francisco,"Tenderloin, San Francisco, CA, United States",37.78513,-122.41451,CA,94102
+../static/images/gold_7527.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Loring Park, Minneapolis, MN, United States",44.96986,-93.28008,MN,55403
+../static/images/leaves_0421.jpg,2019-07-16,St Paul,USA,Ramsey,"West 7th, St Paul, MN, United States",44.93077,-93.12225,MN,55102
+../static/images/leaves_0484.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Carag, Minneapolis, MN, United States",44.94211,-93.29326,MN,55408
+../static/images/leaves_1033.jpg,2019-07-16,St Paul,USA,Ramsey,"5th St W, St Paul, MN 55102, United States",44.9453142,-93.0993506,MN,55102
+../static/images/leaves_1378.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Longfellow, Minneapolis, MN, United States",44.94762,-93.22567,MN,55406
+../static/images/leaves_1402.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_141.jpg,2019-07-16,San Francisco,USA,San Francisco,"Western Addition, San Francisco, CA, United States",37.78095,-122.43222,CA,94102
+../static/images/leaves_1449.jpg,2019-07-16,San Francisco,USA,San Francisco,"Western Addition, San Francisco, CA, United States",37.78095,-122.43222,CA,94102
+../static/images/leaves_1486.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/leaves_1490.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/leaves_1491.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/leaves_1492.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/leaves_1494.jpg,2019-07-16,St Paul,USA,Ramsey,"Fuller Ave, St Paul, MN 55103, United States",44.9539974,-93.1160001,MN,55103
+../static/images/leaves_1503.jpg,2019-07-16,St Paul,USA,Ramsey,"Thomas-Dale, St Paul, MN, United States",44.95874,-93.10595,MN,55103
+../static/images/leaves_1509.jpg,2019-07-16,St Paul,USA,Ramsey,"Thomas-Dale, St Paul, MN, United States",44.95874,-93.10595,MN,55103
+../static/images/leaves_1511.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_1513.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_1522.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_1523.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_1527.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_1586.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_4122.jpg,2019-07-16,St Paul,USA,Ramsey,"West 7th, St Paul, MN, United States",44.93077,-93.12225,MN,55102
+../static/images/leaves_4131.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_4144.jpg,2019-07-16,St Paul,USA,Ramsey,"Payne-Phalen, St Paul, MN, United States",44.97743,-93.07671,MN,55130
+../static/images/leaves_4657.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_4659.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_4662.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_4664.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_4666.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_4668.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_4669.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_4670.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/leaves_812.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Sheridan, Minneapolis, MN, United States",45.00199,-93.26537,MN,55413
+../static/images/lush816.jpg,2019-07-16,Coon Rapids,USA,Anoka,"Coon Rapids, MN, United States",45.17309,-93.3044,MN,55433
+../static/images/lush_1103.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/lush_1243.jpg,2019-07-16,Minneapolis,USA,Hennepin,"North Loop, Minneapolis, MN, United States",44.98331,-93.2821,MN,55405
+../static/images/lush_1326.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/lush_1328.jpg,2019-07-16,St Paul,USA,Ramsey,"Thomas-Dale, St Paul, MN, United States",44.95874,-93.10595,MN,55103
+../static/images/lush_1334.jpg,2019-07-16,St Paul,USA,Ramsey,"Western Ave N, St Paul, MN 55103, United States",44.95827,-93.1161177,MN,55103
+../static/images/lush_1480.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/lush_1680.jpg,2019-07-16,Minneapolis,USA,Hennepin,"East Isles, Minneapolis, MN, United States",44.9558,-93.29906,MN,55405
+../static/images/metal_1483.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/night 333.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/night_1446.jpg,2019-07-16,San Francisco,USA,San Francisco,"Lower Nob Hill, San Francisco, CA, United States",37.78945,-122.41454,CA,94109
+../static/images/night_201.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/night_291.jpg,2019-07-16,Minneapolis,USA,Hennepin,"East Isles, Minneapolis, MN, United States",44.9558,-93.29906,MN,55405
+../static/images/night_292.jpg,2019-07-16,Minneapolis,USA,Hennepin,"East Isles, Minneapolis, MN, United States",44.9558,-93.29906,MN,55405
+../static/images/night_4372.jpg,2019-07-16,St Paul,USA,Ramsey,"West 7th, St Paul, MN, United States",44.93077,-93.12225,MN,55102
+../static/images/night_4441.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/night_4444.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/night_461.jpg,2019-07-16,San Francisco,USA,San Francisco,"Lower Pacific Heights, San Francisco, CA, United States",37.78693,-122.43428,CA,94115
+../static/images/night_5190.jpg,2019-07-16,St Paul,USA,Ramsey,"Concord-Robert, St Paul, MN, United States",44.93586,-93.07428,MN,55107
+../static/images/night_537.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Lowry Hill, Minneapolis, MN, United States",44.96542,-93.29624,MN,55403
+../static/images/partial_2009.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/partner_1942.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/partner_269.jpg,2019-07-16,San Francisco,USA,San Francisco,"Lower Nob Hill, San Francisco, CA, United States",37.78945,-122.41454,CA,94109
+../static/images/partner_286.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/partner_4119.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/red_169.jpg,2019-07-16,St Paul,USA,Ramsey,"West 7th, St Paul, MN, United States",44.93077,-93.12225,MN,55102
+../static/images/red_201.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/red_284.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/shadow_059.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/shadow_1519.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/shadow_1526.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/shadow_2015.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/shadow_4389.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/smash_0485.jpg,2019-07-16,St Paul,USA,Ramsey,"Hamline-Midway, St Paul, MN, United States",44.96288,-93.16838,MN,55104
+../static/images/smash_1205.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/smash_1515.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/smash_4130.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/smash_4132.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/smash_4177.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/snow_1455.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/snow_285.jpg,2019-07-16,Chicago,USA,Cook,"N Alper Ln, Chicago, IL 60654, United States",41.89604,-87.6306896,IL,60654
+../static/images/stand_042.jpg,2019-07-16,St Paul,USA,Ramsey,"Selby Ave, St Paul, MN 55102, United States",44.9465786,-93.12592,MN,55102
+../static/images/stand_063.jpg,2019-07-16,St Paul,USA,Ramsey,"Thomas-Dale, St Paul, MN, United States",44.95874,-93.10595,MN,55103
+../static/images/stand_087.jpg,2019-07-16,Rochester,USA,Olmsted,"Historic Southwest, Rochester, MN, United States",44.01759,-92.46973,MN,55902
+../static/images/stand_093.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/stand_1187.jpg,2019-07-16,Chicago,USA,Cook,"River North, Chicago, IL, United States",41.89253,-87.62477,IL,60611
+../static/images/stand_1229.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Downtown East, Minneapolis, MN, United States",44.97631,-93.25512,MN,55415
+../static/images/stand_1318.jpg,2019-07-16,Minneapolis,USA,Hennepin,"East Isles, Minneapolis, MN, United States",44.9558,-93.29906,MN,55405
+../static/images/stand_1384.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/stand_1399.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit Hill, St Paul, MN, United States",44.93996,-93.13605,MN,55105
+../static/images/stand_145.jpg,2019-07-16,St Paul,USA,Ramsey,"West 7th, St Paul, MN, United States",44.93077,-93.12225,MN,55102
+../static/images/stand_1451.jpg,2019-07-16,Inver Grove Heights,USA,Dakota,"Inver Grove Heights, MN, United States",44.83242,-93.06271,MN,55077
+../static/images/stand_1617.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/stand_1620.jpg,2019-07-16,St Paul,USA,Ramsey,"Energy Park, St Paul, MN, United States",44.97094,-93.15482,MN,55108
+../static/images/stand_1639.jpg,2019-07-16,St Paul,USA,Ramsey,"South Como, St Paul, MN, United States",44.97189,-93.13647,MN,55103
+../static/images/stand_1668.jpg,2019-07-16,St Paul,USA,Ramsey,"Dayton's Bluff, St Paul, MN, United States",44.95674,-93.06136,MN,55106
+../static/images/stand_2010.jpg,2019-07-16,St Paul,USA,Ramsey,"Thomas-Dale, St Paul, MN, United States",44.95874,-93.10595,MN,55103
+../static/images/stand_2016.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/stand_267.jpg,2019-07-16,San Francisco,USA,San Francisco,"Lower Nob Hill, San Francisco, CA, United States",37.78945,-122.41454,CA,94109
+../static/images/stand_295.jpg,2019-07-16,Edina,USA,Hennepin,"Edina, MN, United States",44.91168,-93.34844,MN,55424
+../static/images/stand_372.jpg,2019-07-16,San Francisco,USA,San Francisco,"Financial District, San Francisco, CA, United States",37.79578,-122.40048,CA,94111
+../static/images/stand_4004.jpg,2019-07-16,St Paul,USA,Ramsey,"Thomas-Dale, St Paul, MN, United States",44.95874,-93.10595,MN,55103
+../static/images/stand_4374.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Downtown West, Minneapolis, MN, United States",44.98036,-93.26508,MN,55401
+../static/images/stand_4390.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/stand_441.jpg,2019-07-16,New York,USA,New York,"East Village, New York, NY, United States",40.72804,-73.98499,NY,10009
+../static/images/stand_4671.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/stand_5141.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/stand_5379.jpg,2019-07-16,St Paul,USA,Ramsey,"South of Maryland, St Paul, MN, United States",44.97203,-93.11042,MN,55117
+../static/images/stand_5386.jpg,2019-07-16,St Paul,USA,Ramsey,"Downtown, St Paul, MN, United States",44.94961,-93.0934,MN,55101
+../static/images/stand_547.jpg,2019-07-16,St Paul,USA,Ramsey,"6th St E, St Paul, MN 55101, United States",44.9470426,-93.0940712,MN,55101
+../static/images/stand_548.jpg,2019-07-16,St Paul,USA,Ramsey,"7th St W, St Paul, MN 55102, United States",44.9425523,-93.1052141,MN,55102
+../static/images/stand_673.jpg,2019-07-16,St Paul,USA,Ramsey,"Thomas-Dale, St Paul, MN, United States",44.95874,-93.10595,MN,55103
+../static/images/stand_696.jpg,2019-07-16,St Paul,USA,Ramsey,"Summit-University, St Paul, MN, United States",44.95129,-93.12664,MN,55104
+../static/images/stand_999.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Cedar Riverside, Minneapolis, MN, United States",44.96774,-93.24648,MN,55454
+../static/images/wet_103.jpg,2019-07-16,Minneapolis,USA,Hennepin,"Whittier, Minneapolis, MN, United States",44.95731,-93.28044,MN,55404
+../static/images/wet_1398.jpg,2019-07-16,St Paul,USA,Ramsey,"John Ireland Blvd, St Paul, MN 55155, United States",44.9503649,-93.1063161,MN,55155
+../static/images/wet_406.jpg,2019-07-16,St Paul,USA,Ramsey,"Murray Field Area, St Paul, MN, United States",44.98234,-93.20174,MN,55108
+../static/images/wet_4246.jpg,2019-07-16,St Paul,USA,Ramsey,"Energy Park, St Paul, MN, United States",44.97094,-93.15482,MN,55108
+../static/images/wet_4463.jpg,2019-07-16,Chicago,USA,Cook,"Lincoln Park, Chicago, IL, United States",41.92184,-87.64744,IL,60602

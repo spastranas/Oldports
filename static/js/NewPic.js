@@ -26,7 +26,7 @@
 
          // add to html
              var AddressCell = ElementForAddress.append("h3");
-             AddressCell.text(" Total #olports in the streets reported : " + index);
+             AddressCell.text(" Total #Oldports Photos: " + index);
                    
             d3.select(".img-gallery").selectAll("div")
             .data(GetPicDetails)
@@ -34,7 +34,7 @@
             .append("div") // appends a div to placeholder
             .classed("col-md-4 thumbnail", true) // sets the class of the new div
             .html(function(d) {
-                return `<img class="rotate" src="${d.FileAddress}" >`;
+                return `<img class="rotate1S" src="${d.FileAddress}" >`;
                 // return `<img class="rotate" src="${d.FileAddress}" height="600" width="400">`;
             }); // sets the html in the div to an image tag with the link
             

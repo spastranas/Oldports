@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Helvetica, roboto;
+    font-family: Helvetica, Arial, sans-serif;
     
   }
   
@@ -20,17 +20,25 @@
     height: 100%;
   }
   
+.rotate1S{
+max-height: 440px;
 
+}
   .rotate {
     -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
     margin-top: 65px;
       }
-    .thumbnail {background-color:gray;
-                /* width: 400px; */
-                min-width: 420px;
+    .thumbnail {background-color:#f7711d;
+                width: 344px;
+                min-width: 344px;
               height:450px;}
+    
+    /* #MapContainer{background-color:#f7711d;
+      width:1200px;
+      min-width: 344px;
+    height:800px;} */
 
   .ppcont{width:200px;}
 
@@ -38,6 +46,8 @@
 font-size: 1cm;
 text-align: center;
 font-size:5vw;
+font-stretch: condensed;
+
 }
 
 .legend {
@@ -282,10 +292,10 @@ font-size:5vw;
   
   /* keyframe animations which will be used to animate the title */
   @keyframes title {
-    from {color: rgb(255, 94, 0);
+    from {color: #14403A;
       ont-size: 1rem;
     }
-    to {color: rgb(238, 238, 248);
+    to {color:#f7711d;
       /* font-size: 5.5rem; */
       font-size:4vw;
       opacity: 1;
