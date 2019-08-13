@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Oldports</title>
+
+    <!-- bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+    
+
+
+    <!-- Leaflet JS & CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+
+    <!-- d3 JS -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+    <!-- Marker Cluster JS & CSS -->
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+   <!-- twiter -->
+   <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+  </head>
+<!--  -->
+
+<body>
+<!-- fit everything into one row and one cell -->
+  
+
+     
+  
+
+
+<div class="wrapper">
+
+        <div class="hero text-center"> </div><!-- header picture is defined under the css file -->
+      
+        <nav class="navbar navbar-default">
+          
+        <div class="container-fluid">
+            
+         
+              <div class="title">  <!-- title has an animation on css> -->
+                <p><b>LITTER IS NOT PLEASURE  |  #Oldports</b></p> 
+             
+          </div>
+        </div>
+      </nav>
+
+  
+  <br>
+
+
+<!-- New -->
+
+<div class="row">
+    
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+ 
+
+
+  <div class="table-responsive">         
+
+  <table  class="table">
+
+
+    <tbody>
+
+      <tr>
+
+        <td width="60%"><a  href="/upload-image"><button type="button" class="btn btn-primary">Upload Photo</button></a></td>
+
+        <td width="5%"></td>
+
+        <td width="35%"></td>
+
+      </tr>
+
+     
+
+      <tr>
+
+        <td><div id=LatestPic></div></td>
+
+        <td></td>
+
+        <td><h3>Latest #Oldports Add</h3> </td>
+
+      </tr>
+
+     
+
+      <tr>
+
+        <td><h5>Select map pins to see #Oldports photos.</h5></td>
+
+        <td></td>
+
+        <td><div id=Picturedata>     </div></td>
+
+      </tr>
+
+     
+
+       <tr>
+
+        <td> <div class="MapContainer">
+                <div id='map' style='width: 800px;; height: 450px;' >
+               </div> 
+                </div>  </td>
+
+        <td></td>
+
+        <td><div class="container">
+                <div class="row img-gallery">
+                <!-- Picture goes here -->
+               </div> </div></td>
+
+      </tr>
+
+     
+
+      
+
+    </tbody>
+
+  </table>
+
+  </div>
+</div>
+<div class="col-md-1"></div>
+</div>
+
+ 
+
+  
+    
+  <!--               footer                                                        -->
+    
+  
+    
+  
+  
+
+
+<div container class="closingtext">
+  
+
+<div class="row">
+    <div class="col-md-1"></div>
+<div class="col-md-10">
+  
+<H5>Litter makes cities ugly.<br>
+Some brands become litter more than others.<br>
+
+<H3><b>Newport is one of those brands.<br><br>
+
+Share a photo. Spread the word. #Oldports</b></H3><br>
+
+Newport website: <b><a href="https://www.newport-pleasure.com/" target="_blank">newport-pleasure.com</a></b>.<br>
+#Oldports is a message for civic pride.<br>
+Litter is not pleasure.
+</H5>
+</div>
+<div class="col-md-1"></div>
+</div>
+
+<!-- twitter -->
+<div class="row">
+  <br>
+    <div class="col-md-1"></div>
+    <div class="col-md-6">
+<a class="twitter-hashtag-button"
+  href="https://twitter.com/intent/tweet?text=Share%20a%20photo.%20Spread%20the%20word.&hashtags=oldports&url=https://oldports.herokuapp.com">
+Tweet #Oldports</a>
+</div> 
+</div>
+
+<!-- end of twitter -->
+
+   <!-- close wraper -->
+  
+   </div>
+   </div>
+   
+    
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/ClusterMapLogic.js"></script>
+    <script type="text/javascript" src="../static/js/NewPic.js"></script>
+
+    <!-- <script src="{{ url_for('static', filename='js/NewPic.js') }}"></script> -->
+
+  
+  </body>
+  
+  </html>
+
+
+
+<!--  -->
+  

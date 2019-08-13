@@ -9,6 +9,7 @@
     height: 100%;
     padding: 0;
     margin: 0;
+    /* background-image: url("/static/Images/StaticPics/background-stripes.png"); */
     /* background-color: coral; */
   }
   
@@ -42,6 +43,7 @@ max-height: 440px;
 
   .ppcont{width:200px;}
 
+  .closing{background-color: #199b55}
 .title {
 font-size: 1cm;
 text-align: center;
@@ -147,7 +149,7 @@ font-stretch: condensed;
   /* The styles for the parallax */
   .hero {
     position: relative;
-    height: 150px;
+    height: 200px;
     /* padding: 20px; */
     margin: 0;
     background: black;
