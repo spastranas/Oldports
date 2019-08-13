@@ -135,7 +135,6 @@ def ExtractPicData(picAddress):
     PicData['ImageTimeStamp']=ImageTimeStamp
     PicData['FileAddress']="../"+FileAddress
 
-    make_thumbnail(PicData)
-
+    
     
     return PicData

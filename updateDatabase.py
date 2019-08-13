@@ -76,3 +76,5 @@ def UpdateDB(NewFile):
     session.add(pictureData)
 
     session.commit()
+
+    ProcessPicture.make_thumbnail(NewFile)
