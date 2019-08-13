@@ -90,6 +90,18 @@ def get_location(geotags):
         print(str(e))
         return {}
 
+# FUnction 6 to shrik pictures
+def make_thumbnail(filename):
+    img = Image.open(filename)
+
+    (width, height) = img.size
+    if width > height:
+        ratio = 1200.0 / width
+    else:
+        ratio = 1200.0 / height
+
+    img.thumbnail((round(width * ratio), round(height * ratio)), Image.LANCZOS)
+    img.save(filename)
 # ____________________________________________________________________________________________________________________________________#
 
 # create a function to put the geotag data into a dictionary
@@ -122,4 +134,8 @@ def ExtractPicData(picAddress):
     PicData['zipcode']=zipcode
     PicData['ImageTimeStamp']=ImageTimeStamp
     PicData['FileAddress']="../"+FileAddress
+
+    make_thumbnail(PicData)
+
+    
     return PicData
