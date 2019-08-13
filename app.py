@@ -178,6 +178,67 @@ def upload_image():
 
 
 
+
+
+
+@app.route("/carrusel")
+def carrusel():
+
+# to refresh the database every time we go to the index page
+
+    #################################################
+    # Database Setup
+    #################################################
+
+
+    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/Oldports.sqlite"
+    db = SQLAlchemy(app)
+
+    # reflect an existing database into a new model
+    Base = automap_base()
+    # reflect the tables
+    Base.prepare(db.engine, reflect=True)
+
+
+    conn = db.engine.connect()
+    PictureData = pd.read_sql("SELECT * from GeoTagData", conn) #import pandas
+
+ 
+# end of refresh get data into a variable that can be jsonified
+
+
+    MaxIndex=PictureData["index"].max()
+    data=[]
+    df=PictureData.loc[(PictureData["index"] > MaxIndex-3) ]
+
+    i = 0
+    data=[]
+
+    while i < len(df):
+        geodatavar = {
+
+            'FileAddress':list(df['FileAddress'])[i],
+            'ImageTimeStamp':list(df['ImageTimeStamp'])[i],
+            'city':list(df['city'])[i],
+            'country':list(df['country'])[i],
+            'landmark':list(df['landmark'])[i],
+            'latitude':list(df['latitude'])[i],
+            'longitude':list(df['longitude'])[i],
+            'state':list(df['state'])[i],
+            'zipcode':list(df['zipcode'])[i],
+            'index':list(df['index'])[i]
+                          }
+        data.append(geodatavar)
+        i+=1
+    return jsonify(data)
+      
+
+
+
+
+
+
+
     
 if __name__ == "__main__":
     app.run()
