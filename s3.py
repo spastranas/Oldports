@@ -177,22 +177,14 @@ def upload_image():
    
     if request.method == "POST":
         if request.files:
-            image = request.files["image"]
-            image.save(os.path.join(app.config["IMAGE_UPLOADS"], image.filename))
-            
-            
+            # image = request.files["image"]
+            # image.save(os.path.join(app.config["IMAGE_UPLOADS"], image.filename))
+            file = request.files["user_file"]
+    # file.filename = secure_filename(file.filename)
+            output  = upload_file_to_s3(file, app.config["S3_BUCKET"])
+            return str(output)
 
-            # use function to get geotag data for the picture
-
-            
-            picAddress=UploadDir +image.filename
-            print (picAddress)
-            # execute function saved into the updateDatabase.py file(whuch was added at the begining of this app)
-            updateDatabase.UpdateDB(picAddress)
-           
-
-            print(image.filename)
-            return redirect(request.url)
+            # return redirect(request.url)
     return render_template("public/upload_image.html")
 
 
