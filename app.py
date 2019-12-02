@@ -14,7 +14,7 @@ from werkzeug.utils import secure_filename
 from flask import request, redirect
 import sqlite3
 from boto.s3.connection import S3Connection
-from helpers import *
+
 app = Flask(__name__, static_url_path='/static')
 
 
