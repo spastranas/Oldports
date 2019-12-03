@@ -14,40 +14,31 @@ from werkzeug.utils import secure_filename
 from flask import request, redirect
 import sqlite3
 from boto.s3.connection import S3Connection
-
+import boto3
+from botocore.client import Config
+from config import S3_KEY, S3_SECRET, S3_BUCKET
 app = Flask(__name__, static_url_path='/static')
 
 
 # the keys are saved under an enviromental variable in both heroku and my local computer.
-# connect to WAS s3
-s3 = S3Connection(os.environ['AWS_ACCESS_KEY_ID'], os.environ['AWS_SECRET_ACCESS_KEY'])
 # https://devcenter.heroku.com/articles/config-vars
 
 # app.config["SECRET_KEY"]= os.environ['AWS_SECRET_ACCESS_KEY']
-# look at configfile
-# print(app.config)
-
-
-
-# define directory for file upload
-
-UploadDir="static/Images/uploads/"
-
-#################################################
-# Database Setup
-#################################################
-
-app.config.from_object("config")
-
-
-
 # app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/Oldports.sqlite"
+
+# Get config values 
+app.config.from_object("config")
 
 # look at configfile
 print(app.config)
 
-db = SQLAlchemy(app)
+# define directory for intermediate file upload
+UploadDir="static/Images/uploads/"
 
+#################################################
+# Database Setup
+
+db = SQLAlchemy(app)
 # reflect an existing database into a new model
 Base = automap_base()
 # reflect the tables
@@ -184,7 +175,7 @@ def upload_image():
 
             # use function to get geotag data for the picture
 
-            
+            Picname=image.filename
             picAddress=UploadDir +image.filename
             print (picAddress)
             # execute function saved into the updateDatabase.py file(whuch was added at the begining of this app)
@@ -192,6 +183,31 @@ def upload_image():
            
 
             print(image.filename)
+            #the above steps will save the pictures into an ephemeral file system, so we have to send it to amazon web services for a permanent location
+
+            
+
+            ACCESS_KEY_ID = S3_KEY
+            ACCESS_SECRET_KEY = S3_SECRET
+            BUCKET_NAME = S3_BUCKET
+
+            data = open(picAddress, 'rb')
+
+            s3 = boto3.resource(
+                's3',
+                aws_access_key_id=ACCESS_KEY_ID,
+                aws_secret_access_key=ACCESS_SECRET_KEY,
+                config=Config(signature_version='s3v4')
+            )
+            s3.Bucket(BUCKET_NAME).put_object(Key=Picname, Body=data,ACL='public-read')
+
+           
+
+
+
+
+
+
             return redirect(request.url)
     return render_template("public/upload_image.html")
 
@@ -254,21 +270,7 @@ def carrusel():
 
 
 
-
-# @app.route("/upload-image", methods=["GET", "POST"])
-
-@app.route("/test", methods=["POST"])
-def upload_file():
-
-    file = request.files["user_file"]
-    # file.filename = secure_filename(file.filename)
-    output  = upload_file_to_s3(file, app.config["S3_BUCKET"])
-    return str(output)
-
-
-
-
-    
+  
 if __name__ == "__main__":
     app.run()
 
