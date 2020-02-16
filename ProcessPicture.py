@@ -107,7 +107,7 @@ def make_thumbnail(filename):
 # create a function to put the geotag data into a dictionary
 # create a filed with file address to point to the image directory: ../static/Images/pic.jpg or  ../static/Images/uploads/pic.jpg
 
-def ExtractPicData(picAddress):
+def ExtractPicData(picAddress,Picname):
     PicData={'latitude':"",'longitude':'','landmark':'','country':'','state':'','county':'','city':'','zipcode':'','ImageTimeStamp':'','FileAddress':''}
     exif = get_exif(picAddress)
     geotags = get_geotagging(exif)
@@ -122,7 +122,7 @@ def ExtractPicData(picAddress):
     city=location['Response']['View'][0]['Result'][0]['Location']['Address']['City']
     zipcode=location['Response']['View'][0]['Result'][0]['Location']['Address']['PostalCode']
     ImageTimeStamp=location['Response']['View'][0]['Result'][0]['Location']['MapReference']['MapReleaseDate']
-    FileAddress=picAddress
+    FileAddress="https://oldports-static-images.s3.us-east-2.amazonaws.com/"
 
     PicData['latitude']=latitude
     PicData['longitude']=longitude
@@ -133,7 +133,7 @@ def ExtractPicData(picAddress):
     PicData['city']=city
     PicData['zipcode']=zipcode
     PicData['ImageTimeStamp']=ImageTimeStamp
-    PicData['FileAddress']="../"+FileAddress
+    PicData['FileAddress']=FileAddress+Picname
 
     
     

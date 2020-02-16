@@ -35,6 +35,7 @@ print(app.config)
 # define directory for intermediate file upload
 UploadDir="static/Images/uploads/"
 
+
 #################################################
 # Database Setup
 
@@ -179,7 +180,7 @@ def upload_image():
             picAddress=UploadDir +image.filename
             print (picAddress)
             # execute function saved into the updateDatabase.py file(whuch was added at the begining of this app)
-            updateDatabase.UpdateDB(picAddress)
+            updateDatabase.UpdateDB(picAddress,Picname)
            
 
             print(image.filename)

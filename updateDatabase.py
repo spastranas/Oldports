@@ -1,4 +1,4 @@
-def UpdateDB(NewFile):
+def UpdateDB(NewFile,Picname):
 
     # Dependencies
     # ----------------------------------
@@ -34,7 +34,7 @@ def UpdateDB(NewFile):
     import ProcessPicture
     picAddress=NewFile
     # execute function into a variable
-    df=ProcessPicture.ExtractPicData(picAddress)
+    df=ProcessPicture.ExtractPicData(picAddress,Picname)
 
 
     # Create variables to hold new picture data info
