@@ -50,8 +50,8 @@ var myMap = L.map("map", {
   
         // Add a new marker to the cluster group and bind a pop-up
         markers.addLayer(L.marker([lat, lon])
-          .bindPopup( '<div class="ppcont"> <img style="max-height:200px;max-width:200px;" img src=' + img + "/>"
-          ,));
+        .bindPopup(  "<img src=' " + img + " ' img style='max-height:200px;max-width:200px;'/>"
+          ));
       }
   
     }
@@ -61,5 +61,6 @@ var myMap = L.map("map", {
   
   });
   // ,{maxWidth: 800, closeOnClick: true}));
-  // working code: .bindPopup( '<img style="max-height:200px;max-width:200px;" img src=' + img + "/>"
-  // <div class='ppcont'><img src='yourimg.jpg' /></div>
+
+  // .bindPopup( "<img src='https://oldports-static-images.s3.us-east-2.amazonaws.com/red_4570.jpg'/>"
+ 
