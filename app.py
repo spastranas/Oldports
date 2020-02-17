@@ -16,8 +16,10 @@ import sqlite3
 from boto.s3.connection import S3Connection
 import boto3
 from botocore.client import Config
-from config import S3_KEY, S3_SECRET, S3_BUCKET
+from config import S3_KEY, S3_SECRET, S3_BUCKET, SQLALCHEMY_DATABASE_URI, API_KEY
 app = Flask(__name__, static_url_path='/static')
+
+
 
 
 # the keys are saved under an enviromental variable in both heroku and my local computer.
@@ -68,7 +70,7 @@ def data():
     #################################################
 
 
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/Oldports.sqlite"
+    app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
     db = SQLAlchemy(app)
 
     # reflect an existing database into a new model
@@ -116,7 +118,7 @@ def imageFunct():
     #################################################
 
 
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/Oldports.sqlite"
+    app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
     db = SQLAlchemy(app)
 
     # reflect an existing database into a new model
@@ -227,7 +229,7 @@ def carrusel():
     #################################################
 
 
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/Oldports.sqlite"
+    app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
     db = SQLAlchemy(app)
 
     # reflect an existing database into a new model
