@@ -15,8 +15,9 @@ from flask import request, redirect
 import sqlite3
 from boto.s3.connection import S3Connection
 import boto3
+import psycopg2 
 from botocore.client import Config
-from config import S3_KEY, S3_SECRET, S3_BUCKET, SQLALCHEMY_DATABASE_URI, API_KEY
+from config import S3_KEY, S3_SECRET, S3_BUCKET, API_KEY,DATABASE_URL
 app = Flask(__name__, static_url_path='/static')
 
 
@@ -31,6 +32,7 @@ app = Flask(__name__, static_url_path='/static')
 # Get config values 
 app.config.from_object("config")
 
+
 # look at configfile
 print(app.config)
 
@@ -41,6 +43,18 @@ UploadDir="static/Images/uploads/"
 #################################################
 # Database Setup
 
+# postgre
+
+app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # silence the deprecation warning
+
+db = SQLAlchemy(app)
+
+
+
+
+
+
 db = SQLAlchemy(app)
 # reflect an existing database into a new model
 Base = automap_base()
@@ -49,7 +63,7 @@ Base.prepare(db.engine, reflect=True)
 
 
 conn = db.engine.connect()
-PictureData = pd.read_sql("SELECT * from GeoTagData", conn) #import pandas
+PictureData = pd.read_sql('SELECT * from "GeoTagData"', conn) #import pandas
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -58,7 +72,7 @@ app = Flask(__name__, static_url_path='/static')
 @app.route("/")
 def index():
     """Return the homepage."""
-    return render_template("index.html")
+    return render_template("index.html", key= API_KEY)
   
 # data route
 @app.route("/Geodata")
@@ -70,7 +84,8 @@ def data():
     #################################################
 
 
-    app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
+    app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URL
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # silence the deprecation warning
     db = SQLAlchemy(app)
 
     # reflect an existing database into a new model
@@ -80,7 +95,7 @@ def data():
 
 
     conn = db.engine.connect()
-    PictureData = pd.read_sql("SELECT * from GeoTagData", conn) #import pandas
+    PictureData = pd.read_sql('SELECT * from "GeoTagData"', conn) #import pandas
 
  
 # end of refresh get data into a variable that can be jsonified
@@ -118,7 +133,8 @@ def imageFunct():
     #################################################
 
 
-    app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
+    app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URL
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # silence the deprecation warning
     db = SQLAlchemy(app)
 
     # reflect an existing database into a new model
@@ -128,7 +144,7 @@ def imageFunct():
 
 
     conn = db.engine.connect()
-    PictureData = pd.read_sql("SELECT * from GeoTagData", conn) #import pandas
+    PictureData = pd.read_sql('SELECT * from "GeoTagData"', conn) #import pandas
 
  
 # end of refresh get data into a variable that can be jsonified
@@ -182,7 +198,7 @@ def upload_image():
             picAddress=UploadDir +image.filename
             print (picAddress)
             # execute function saved into the updateDatabase.py file(whuch was added at the begining of this app)
-            updateDatabase.UpdateDB(picAddress,Picname)
+            updateDatabase.UpdateDB(picAddress,Picname,DATABASE_URL)
            
 
             print(image.filename)
@@ -229,7 +245,8 @@ def carrusel():
     #################################################
 
 
-    app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
+    app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URL
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # silence the deprecation warning
     db = SQLAlchemy(app)
 
     # reflect an existing database into a new model
@@ -239,7 +256,7 @@ def carrusel():
 
 
     conn = db.engine.connect()
-    PictureData = pd.read_sql("SELECT * from GeoTagData", conn) #import pandas
+    PictureData = pd.read_sql('SELECT * from "GeoTagData"', conn) #import pandas
 
  
 # end of refresh get data into a variable that can be jsonified

@@ -107,7 +107,7 @@ def make_thumbnail(filename):
 # create a function to put the geotag data into a dictionary
 # create a filed with file address to point to the image directory: ../static/Images/pic.jpg or  ../static/Images/uploads/pic.jpg
 
-def ExtractPicData(picAddress,Picname):
+def ExtractPicData(picAddress,Picname,DATABASE_URL):
     PicData={'latitude':"",'longitude':'','landmark':'','country':'','state':'','county':'','city':'','zipcode':'','ImageTimeStamp':'','FileAddress':''}
     exif = get_exif(picAddress)
     geotags = get_geotagging(exif)

@@ -1,4 +1,4 @@
-def UpdateDB(NewFile,Picname):
+def UpdateDB(NewFile,Picname,DATABASE_URL):
 
     # Dependencies
     # ----------------------------------
@@ -34,7 +34,7 @@ def UpdateDB(NewFile,Picname):
     import ProcessPicture
     picAddress=NewFile
     # execute function into a variable
-    df=ProcessPicture.ExtractPicData(picAddress,Picname)
+    df=ProcessPicture.ExtractPicData(picAddress,Picname,DATABASE_URL)
 
 
     # Create variables to hold new picture data info
@@ -52,10 +52,11 @@ def UpdateDB(NewFile,Picname):
     # look for the last index, so we can add the index column
     # Create Database Connection
     # ----------------------------------
-    database_path = "db/Oldports.sqlite"
-    engine = create_engine(f"sqlite:///{database_path}")
+    #database_path = "db/Oldports.sqlite"
+    #engine = create_engine(f"sqlite:///{database_path}")
+    engine = create_engine(DATABASE_URL)
     # conn = engine.connect()
-    data = engine.execute("SELECT *  FROM GeoTagData")
+    data = engine.execute('SELECT *  FROM "GeoTagData"')
     index=[]
     for record in data:
         index.append(record)
