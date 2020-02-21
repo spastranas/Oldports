@@ -34,7 +34,7 @@ app.config.from_object("config")
 
 
 # look at configfile
-print(app.config)
+#print(app.config)
 
 # define directory for intermediate file upload
 UploadDir="static/Images/uploads/"
@@ -49,6 +49,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # silence the deprecation warning
 
 db = SQLAlchemy(app)
+db.create_all()
 
 
 
