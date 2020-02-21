@@ -17,7 +17,8 @@ POSTGRES_PW  =os.environ.get("POSTGRES_PW")
 POSTGRES_DB  =os.environ.get("POSTGRES_DB")
 #DATABASE_URL = 'postgresql+psycopg2://{user}:{pw}@{url}/{db}'.format(user=POSTGRES_USER,pw=POSTGRES_PW,url=POSTGRES_URL,db=POSTGRES_DB)
 
-DATABASE_URL = 'postgresql+psycopg2://{user}:{pw}@{url}/{db}'.format(user=os.environ.get("POSTGRES_USER"),pw=os.environ.get("POSTGRES_PW"),url=os.environ.get("POSTGRES_URL"),db=os.environ.get("POSTGRES_DB"))
+#DATABASE_URL = 'postgresql+psycopg2://{user}:{pw}@{url}/{db}'.format(user=os.environ.get("POSTGRES_USER"),pw=os.environ.get("POSTGRES_PW"),url=os.environ.get("POSTGRES_URL"),db=os.environ.get("POSTGRES_DB"))
+DATABASE_URL = '{user}:{pw}@{url}/{db}'.format(user=os.environ.get("POSTGRES_USER"),pw=os.environ.get("POSTGRES_PW"),url=os.environ.get("POSTGRES_URL"),db=os.environ.get("POSTGRES_DB"))
 
 #SQLALCHEMY_DATABASE_URI = DATABASE_URL
 
