@@ -26,7 +26,7 @@
 
          // add to html
              var AddressCell = ElementForAddress.append("h3");
-             AddressCell.text(" Total #Oldports Photos: " + index);
+             AddressCell.text(" #Oldports found, capured and discarded: " + index);
                    
             d3.select(".img-gallery").selectAll("div")
             .data(GetPicDetails)

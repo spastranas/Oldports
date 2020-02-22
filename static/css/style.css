@@ -280,14 +280,28 @@ font-stretch: condensed;
       color: white;
     }
 
-    /* #container {
-      min-width: 400px;
-      max-width: 400px;
-      height: 800px;
-      margin: 0 auto;
-      background-color: aqua;
+    .hero {
+      position: relative;
+      height: 50px;
+      /* padding: 20px; */
+      margin: 0;
+      background: black;
+      background-image: url("/static/Images/StaticPics/header.jpg"); 
+      background-attachment: fixed;
+      background-position: top center;
+      /* background-position:bottom center; */
+       /* background-size: cover;  */
+       background-size: 400px 200px;
+       /* background-repeat: no-repeat; */
     }
- */
+    h3 {
+      font-size: 100%;
+      
+    }
+    .col-11 col-sm-12 col-md-6{
+      width: 50 px;
+
+    }
 
 
   }
