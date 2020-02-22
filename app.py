@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import numpy as np
 import ProcessPicture,updateDatabase # this are the functions that will get geodata from pictures and add it to the database
-import commands
+#import commands
 
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
@@ -50,11 +50,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # silence the deprecation warning
 
 db = SQLAlchemy(app)
-
-db.create_all()
-commands.create_tables
-
-
 
 
 
