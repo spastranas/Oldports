@@ -52,6 +52,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # silence the deprecation w
 db = SQLAlchemy(app)
 
 db.create_all()
+commands.create_tables
 
 
 
