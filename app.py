@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import numpy as np
 import ProcessPicture,updateDatabase # this are the functions that will get geodata from pictures and add it to the database
-#import commands
+
 
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
