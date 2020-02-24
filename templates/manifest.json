@@ -14,7 +14,7 @@
 	"prefer_related_applications" : false,
 	"icons" : [
 		{
-			"src": "../static/favicon.ico",
+			"src": "/images/static/favicon.ico",
 			"sizes": "16x16 32x32 48x48"
 		}],
 	"url" : "https://oldports.herokuapp.com/",
