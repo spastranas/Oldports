@@ -1,0 +1,8 @@
+https://blog.heroku.com/how-to-make-progressive-web-app
+
+Files:
+1. manifest.json
+2.offline.html
+3. pwabuilder-sw.js (referenced on the html)
+4.pwabuilder-sw-register
+5.manup.js (referenced on the html)
