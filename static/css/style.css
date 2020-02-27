@@ -289,7 +289,7 @@ font-stretch: condensed;
       background-position: top center;
       /* background-position:bottom center; */
        /* background-size: cover;  */
-       background-size: 400px 200px;
+       background-size: 400px 300px;
        /* background-repeat: no-repeat; */
     }
     h3 {
@@ -303,7 +303,9 @@ font-stretch: condensed;
 
     #map {
       height: 400px;
-      width: 350px;
+      width: 200px;
+      /* height: 400px;
+      width: 350px; */
     }
     
   }
