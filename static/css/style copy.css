@@ -12,23 +12,15 @@
     /* background-image: url("/static/Images/StaticPics/background-stripes.png"); */
     /* background-color: coral; */
   }
-
-  /* display command on #map is what make it center */
-  .map-container {
-    text-align: center;
-  }
-
+  
   #map {
-    height: 350px;
-    width: 100%;
-    position: relative; 
-    display: inline-block; 
+    height: 450px;
+    width: 800px;
   }
   
   
 .rotate1S{
-max-height: 200px;
-max-width: 120px;
+max-height: 440px;
 
 }
   .rotate {
@@ -38,75 +30,14 @@ max-width: 120px;
     margin-top: 65px;
       }
     .thumbnail {background-color:#f7711d;
-                width: 120px;
-                min-width: 120px;
-              max-height:200px;
-              
-    position: relative; 
-            
-    display: inline-block;}
-    .Gallery {max-height:180px;
-    max-width: 100%;
-    text-align: center;}
+                width: 344px;
+                min-width: 344px;
+              height:450px;}
     
-/* test for image gallery */
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 10%;
-  /* height: 80px; */
-  padding: 10px;
-}
-
-/* Style the images inside the grid */
-.column img {
-  opacity: 1;
-  max-width: 180px;
-  height: 200px;
-  cursor: pointer;
-}
-
-.column img:hover {
-  opacity: 0.7;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
-  position: relative;
-  display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-
-/* Closable button inside the image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-
-
-
-
-/* end of test */
-
+    /* #MapContainer{background-color:#f7711d;
+      width:1200px;
+      min-width: 344px;
+    height:800px;} */
 
   .ppcont{width:200px;}
 
@@ -216,8 +147,8 @@ font-stretch: condensed;
   /* The styles for the parallax */
   .hero {
     position: relative;
-    height: 220px;
-    /* padding: 220px;  */
+    height: 200px;
+    /* padding: 20px; */
     margin: 0;
     background: black;
     background-image: url("/static/Images/StaticPics/header.jpg"); 
@@ -226,7 +157,7 @@ font-stretch: condensed;
     /* background-position:bottom center; */
      /* background-size: cover;  */
      background-size: 1500px 500px;
-     background-repeat: no-repeat; 
+     /* background-repeat: no-repeat; */
   }
  .footer h8{color: white;}
  .icon {color: white;}
@@ -371,17 +302,12 @@ font-stretch: condensed;
     } */
 
     #map {
-      height: 350px;
-      width: 400px;
+      height: 450px;
+      width: 200px;
       /* height: 400px;
       width: 350px; */
     }
-    .column img {
-      opacity: 1;
-      max-width: 80px;
-      height: 80px;
-      cursor: pointer;
-    }
+    
   }
   
   /* keyframe animations which will be used to animate the title */

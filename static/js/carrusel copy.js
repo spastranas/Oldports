@@ -17,13 +17,13 @@
 
          
                             
-            d3.select("#img-gallery").selectAll("div")
+            d3.select(".img-gallery").selectAll("div")
             .data(GetPicDetails)
             .enter() // creates placeholder for new data
-             .append("div") // appends a div to placeholder
-             .classed("column", true) // sets the class of the new div
+            .append("div") // appends a div to placeholder
+            .classed("col-md-4 thumbnail", true) // sets the class of the new div
             .html(function(d) {
-                return `<img src="${d.FileAddress}" >`;
+                return `<img class="rotate1S" src="${d.FileAddress}" >`;
                 // return `<img class="rotate" src="${d.FileAddress}" height="600" width="400">`;
             }); // sets the html in the div to an image tag with the link
             

@@ -36,7 +36,7 @@
    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
 
    <!--Progressive web app  -->
-   <link rel='manifest' href='../templates/manifest.json'>
+   <link rel='manifest' href='/templates/manifest.json'>
 
   <!-- progressive app worker code -->
   
@@ -49,27 +49,12 @@
 <!--  -->
 
 <body>
-  <!-- photo : formated in css -->
-  <!-- <div class="hero text-center">  </div>  -->
-
-  <div class="wrapper">
-  <div class= "row">
-    <div id="img-gallery">     <!-- Picture goes here -->    </div>  
-  </div>
-
-  <!--  -->
-    <div class="title">  <!-- title has an animation on css> -->
-      <p><b>#Oldports litter map.</b></p> 
-    </div>
-  <!-- map. formatd in css -->
-  <div class="map-container" > <div id='map' ></div> </div>
 
 
 
-<!--                                old                                          -->
 
 
-    
+    <div class="wrapper">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
 
@@ -80,7 +65,9 @@
           </div>
         </div>
       </nav>
-      
+      <div class="hero text-center">
+      </div> 
+  
   <br>
   
      
@@ -103,7 +90,7 @@
 <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-6">
-        
+        <div id=LatestPic></div>
         <h5>Select map pins to see #Oldports photos.</h5>
     </div>
 <!-- end of pic count  -->
@@ -111,7 +98,7 @@
 <!-- city and state. Jave script updates id Picturedata with city and state -->
     <div class="col-md-1">    </div>
       <div class="col-md-3">
-      
+      <h3>Latest #Oldports Found</h3>
       <div id=Picturedata>     </div>
 
     </div>
@@ -127,6 +114,46 @@
 
 
   
+<!-- oldports map -->
+
+<div class="row">
+                                 <!-- space to the left -->
+  <div class="col-1 col-sm-1 col-md-1"></div>
+                         <!-- map  --> 
+                        <!-- <div class="col-md-6"> -->
+                            <div class="col-11 col-sm-11 col-md-6">  <!-- make it 3 on a small screen -->
+                        <br>
+                        <br>
+                        <div class="MapContainer">
+                        <!-- <div id='map'  style='width: 800px; height: 450px;'></div> -->
+                        <div id='map' ></div>
+                        </div>  
+                        </div>
+                        <!-- end of map -->
+                                                                    <!-- fathest right -->
+                                                                      <div class="col-md-1">
+                                                                      </div>
+                                                                      <div class="col-6 col-sm-6 col-md-3">
+                                                                      <!-- <div class="col-md-3">   -->
+                                                                        <br>
+                                                                        <br>
+                                                                      <!-- img- gallery is updated by java script -->
+                                                                      <div class="container">
+                                                                      <div class="row img-gallery">
+                                                                        <!-- Picture goes here -->
+                                                                      </div>
+                                                                      </div>
+                                                                      
+                                                                      </div>
+                                                                      <div class="d-none d-lg-block"> 
+                                                                        <!-- hide in small devices -->
+                                                                        
+                                                                          <div class="col-md-1"></div>    
+
+                                                                      </div>
+                                                                      
+                                                                      
+
 <!-- end of row 3 -->
 </div>
 
@@ -187,7 +214,6 @@ Tweet #Oldports</a>
     <script type="text/javascript" src="../static/js/config.js"></script>
     <script type="text/javascript" src="../static/js/ClusterMapLogic.js"></script>
     <script type="text/javascript" src="../static/js/NewPic.js"></script>
-        <script type="text/javascript" src="../../static/js/carrusel.js"></script>
    <!-- progressive webapp setup -->
     <script src="../static/js/manup.js"></script>
     

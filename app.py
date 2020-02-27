@@ -263,7 +263,7 @@ def carrusel():
 
     MaxIndex=PictureData["index"].max()
     data=[]
-    df=PictureData.loc[(PictureData["index"] > MaxIndex-3) ]
+    df=PictureData.loc[(PictureData["index"] > MaxIndex-10) ]
 
     i = 0
     data=[]

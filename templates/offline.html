@@ -40,7 +40,7 @@
 
   <!-- progressive app worker code -->
   
-  <script type="text/javascript" src="../static/js/worker.js"></script>
+  <script type="text/javascript" src="../static/js/pwabuilder-sw-register.js"></script>
   
 
 
@@ -125,7 +125,8 @@
                         <br>
                         <br>
                         <div class="MapContainer">
-                        <div id='map'  style='width: 800px; height: 450px;'></div>
+                        <!-- <div id='map'  style='width: 800px; height: 450px;'></div> -->
+                        <div id='map' ></div>
                         </div>  
                         </div>
                         <!-- end of map -->
@@ -190,21 +191,36 @@ Litter is not pleasure.
 Tweet #Oldports</a>
 
 </div>
+
+
 <div class="col-md-3">
+
+  <script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
+></script>
+<pwa-install> </pwa-install>
+
+
+
 
 </div>
 </div>
 
 <!-- end of twitter -->
-
    <!-- close wraper -->
     </div>
     
     <script type="text/javascript" src="../static/js/config.js"></script>
     <script type="text/javascript" src="../static/js/ClusterMapLogic.js"></script>
     <script type="text/javascript" src="../static/js/NewPic.js"></script>
+   <!-- progressive webapp setup -->
+    <script src="../static/js/manup.js"></script>
+    
+  
 
-    <!-- <script src="{{ url_for('static', filename='js/NewPic.js') }}"></script> -->
+
+
 </div>
   
   </body>
