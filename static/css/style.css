@@ -14,10 +14,8 @@
   }
   
   #map {
-    height: 100%;
-    width: 100vw;
-    /* padding: 1cm; */
-
+    height: 450px;
+    width: 800px;
   }
   
   
@@ -282,7 +280,7 @@ font-stretch: condensed;
 
     .hero {
       position: relative;
-      height: 50px;
+      height: 80px;
       /* padding: 20px; */
       margin: 0;
       background: black;
@@ -303,10 +301,11 @@ font-stretch: condensed;
 
     } */
 
-    /* #map {
-      height: 10%;
-      width: 50vw;
-    } */
+    #map {
+      height: 400px;
+      width: 350px;
+    }
+    
   }
   
   /* keyframe animations which will be used to animate the title */
