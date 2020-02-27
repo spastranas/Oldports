@@ -50,7 +50,7 @@ var myMap = L.map("map", {
   
         // Add a new marker to the cluster group and bind a pop-up
         markers.addLayer(L.marker([lat, lon])
-        .bindPopup(  "<img src=' " + img + " ' img style='max-height:200px;max-width:200px;'/>"
+        .bindPopup(  "<img src=' " + img + " ' img style='max-height:150px;max-width:150px;'/>"
           ));
       }
   
