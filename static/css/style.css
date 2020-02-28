@@ -49,7 +49,9 @@ max-width: 120px;
     max-width: 100%;
     text-align: center;}
     
-/* test for image gallery */
+/*  for image gallery */
+
+/* https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp */
 /* The grid: Four equal columns that floats next to each other */
 .column {
   float: left;
@@ -77,35 +79,9 @@ max-width: 120px;
   clear: both;
 }
 
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
-  position: relative;
-  display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-
-/* Closable button inside the image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
 
 
-
-
-/* end of test */
+/* end of image gallery */
 
 
   .ppcont{width:200px;}
@@ -174,44 +150,6 @@ font-stretch: condensed;
     color: white;
   } */
   
-  /* Adding styles to the aside and filter form */
-  .ufo-form {
-    margin-top: 50px;
-  }
-  
-  .filters .panel-body {
-    padding: 0;
-  }
-  
-  .filters {
-    margin-top: 10px;
-  }
-  
-  select {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    color: #8e979f;
-    outline: none;
-  }
-  
-  #table-area th {
-    text-align: center;
-  }
-  
-  #table-area th:first-child,
-  #table-area th:nth-child(2),
-  #table-area th:nth-child(6) {
-    min-width: 70px;
-  }
-  
-  .loader {
-    margin-top: 50px;
-  }
-  
-  .margin-top-50 {
-    margin-top: 50px;
-  }
   
   /* The styles for the parallax */
   .hero {
@@ -235,65 +173,6 @@ font-stretch: condensed;
 .title{animation: title 2s forwards linear;
   font-size: 30px;}
 
-  /* input placeholder color changes */
-  .form-control::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #8e979f;
-  }
-  
-  .form-control::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #8e979f;
-  }
-  
-  .form-control:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #8e979f;
-  }
-  
-  .form-control:-moz-placeholder {
-    /* Firefox 18- */
-    color: #8e979f;
-  }
-
-  /* line css */
- 
-  .axis {
-    font: 10px sans-serif;
-  }
-  
-  .axis path,
-  .axis line {
-    fill: none;
-    stroke: #D4D8DA;
-    stroke-width: 2px;
-    shape-rendering: crispEdges;
-  }
-  
-  .line {
-    fill: none;
-    stroke: #6F257F;
-    stroke-width: 5px;
-  }
-  
-  .overlay {
-    fill: none;
-    pointer-events: all;
-  }
-  
-  .focus circle {
-    fill: #F1F3F3;
-    stroke: #6F257F;
-    stroke-width: 5px;
-  }
-    
-  .hover-line {
-    stroke: #6F257F;
-    stroke-width: 2px;
-    stroke-dasharray: 3,3;
-  }
-
-  /* end of line css */
   /* media queries which will only be activated at specific screen sizes */
   @media (max-width: 800px) {
     #table-area td {
@@ -302,45 +181,7 @@ font-stretch: condensed;
   }
   
   @media (max-width: 500px) {
-    #table-area thead {
-      display: none;
-    }
-  
-    #table-area tr td:first-child {
-      font-size: 1.8em;
-      font-weight: bold;
-      background: #696b6d;
-    }
-  
-    #table-area tr td:last-child {
-      margin-bottom: 20px;
-    }
-  
-    #table-area tr td:last-child::after {
-      display: block;
-      width: 100%;
-      height: 1px;
-      margin-top: 20px;
-      content: " ";
-      background: aliceblue;
-    }
-  
-    #table-area td {
-      font-size: 1.25em;
-    }
-  
-    #table-area tbody td {
-      display: block;
-      text-align: center;
-    }
-  
-    #table-area tbody td::before {
-      display: block;
-      font-size: 1.4em;
-      font-weight: bold;
-      text-align: center;
-      content: attr(data-th);
-    }
+
   
     .hero h1 {
       animation: smaller-title 1.2s forwards linear;

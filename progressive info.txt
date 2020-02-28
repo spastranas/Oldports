@@ -1,4 +1,5 @@
-https://blog.heroku.com/how-to-make-progressive-web-app
+2. https://blog.heroku.com/how-to-make-progressive-web-app
+1. https://medium.com/codingthesmartway-com-blog/getting-started-with-progressive-web-apps-pwa-ab05bcc25bfd
 
 Files:
 1. manifest.json
