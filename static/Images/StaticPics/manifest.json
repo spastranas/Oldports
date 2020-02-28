@@ -2,7 +2,7 @@
 	"lang" : "en-us",
 	"name" : "Oldports",
 	"display" : "standalone",
-	"start_url" : "http://oldports.herokuapp.com/",
+	"start_url" : "/",
 	"short_name" : "Oldports",
 	"theme_color" : "transparent",
 	"description" : "",
