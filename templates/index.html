@@ -56,6 +56,9 @@
 
    <!-- twiter -->
    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+   <!-- icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
   
 
@@ -65,54 +68,56 @@
 <!--  -->
 
 <body>
-  <!-- photo : formated in css -->
-  <!-- <div class="hero text-center">  </div>  -->
+
+
+
 
   <div class="wrapper">
+
+
+    <div class= "row">
+    <div class="navbar">
+      
+      <!-- <a href="#home">About us</a>
+      <a href="../templates/public/upload_image.html">Capture</a> -->
+      <!-- icons reference -->
+      <!-- http://www.staroceans.org.s3-website-us-east-1.amazonaws.com/w3c/icons_reference.asp.html -->
+      <button   onclick="window.location.href = '/upload-image';"> <i class="material-icons">  face</i> About Us </button>
+      <button   onclick="window.location.href = '/upload-image';"> <i class="material-icons">  credit_card</i> Donate </button>
+      <button   onclick="window.location.href = '/upload-image';"> <i class="material-icons">  add_a_photo</i> Capture Oldports </button>
+      
+    </div>
+
+    </div>
+
+
+
+
+
+<div class="main"> </div>
+
   <div class= "row">
     <div id="img-gallery">     <!-- Picture goes here -->    </div>  
   </div>
 
   <!--  -->
     <div class="title">  <!-- title has an animation on css> -->
-      <p><b>#Oldports litter map.</b></p> 
+      <p><b>#OLPORTS LITTER MAP.</b></p> 
     </div>
   <!-- map. formatd in css -->
   <div class="map-container" > <div id='map' ></div> </div>
 
-
+  <div class="title">  <!-- title has an animation on css> -->
+    <p><b>LITTER IS NOT PLEASURE.</b></p> 
+  </div>
 
 <!--                                old                                          -->
 
 
     
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-
-         
-              <div class="title">  <!-- title has an animation on css> -->
-                <p><b>LITTER IS NOT PLEASURE  |  #Oldports</b></p> 
-             
-          </div>
-        </div>
-      </nav>
-      
-  <br>
   
-     
-  <!-- start charts -->
-  <!-- drop down -->
-  <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-2">
-           <a  href="/upload-image"><button type="button" class="btn btn-primary">Upload Photo</button></a>
-          
-          <h5></h5>
-         
-          </div> 
-          <div class="col-md-9"></div> 
-  </div>
-
+  
+  
 <!-- pic count  the id LatestPic gets updated by java-script-->
 
 
@@ -195,11 +200,6 @@ Tweet #Oldports</a>
         <script type="text/javascript" src="../../static/js/carrusel.js"></script>
     
   
-  <script
-  type="module"
-  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
-></script>
-<pwa-install> </pwa-install> 
 
 
 

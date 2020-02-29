@@ -13,6 +13,49 @@
     /* background-color: coral; */
   }
 
+/* nav bar */
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: whitesmoke;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+   width: 105% ;
+   text-align: center;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f7711d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: medium;
+}
+
+.navbar button {
+  font-size:12px;
+  color: #f7711d;
+
+
+}
+
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* adds a space from the nav bar so that it does not ovelap */
+ .main {
+  margin-top: 0px; 
+} 
+
+/* end of nbar */
+
   /* display command on #map is what make it center */
   .map-container {
     text-align: center;
@@ -45,10 +88,18 @@ max-width: 120px;
     position: relative; 
             
     display: inline-block;}
-    .Gallery {max-height:180px;
+/* 
+    .gallery {max-height:200px;
     max-width: 100%;
-    text-align: center;}
+    text-align: center;
+    margin-top: 50px;
+    } */
     
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
 /*  for image gallery */
 
 /* https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp */
@@ -58,6 +109,7 @@ max-width: 120px;
   width: 10%;
   /* height: 80px; */
   padding: 10px;
+  
 }
 
 /* Style the images inside the grid */
@@ -134,12 +186,12 @@ font-stretch: condensed;
     padding: 5px;
     background: #3d3e3f;
   }
-  
+/*   
   .navbar {
     padding: 5px;
     margin: 0;
     background-image: url("/static/Images/StaticPics/background-stripes.png");
-  }
+  } */
   
   /* This CSS styles the ufo icon in the navbar
   .nav-ufo {
@@ -222,6 +274,10 @@ font-stretch: condensed;
       max-width: 80px;
       height: 80px;
       cursor: pointer;
+    }
+    .title {
+    font-size: medium;
+      
     }
   }
   
