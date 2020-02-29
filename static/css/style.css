@@ -6,15 +6,30 @@
   
   html,
   body {
-    height: 100%;
+    height: 100%; 
     padding: 0;
     margin: 0;
-    /* background-image: url("/static/Images/StaticPics/background-stripes.png"); */
-    /* background-color: coral; */
-  }
+      /* background-image: url("/static/Images/StaticPics/background-stripes.png");  */
+    }
+
+    /* this code fixed twitter to the bottom */
+.fullContainer{position: relative;}
+.bottom{position: fixed;;
+bottom: 0;
+align-content: right;
+text-align: right;
+text-align-last: right;
+}
+
+.bottom a { align-content: right;
+  text-align: right;
+ }
+  
+
 
 /* nav bar */
 /* The navigation bar */
+/* The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order.  */
 .navbar {
   overflow: hidden;
   background-color: whitesmoke;
@@ -22,6 +37,7 @@
   top: 0; /* Position the navbar at the top of the page */
    width: 105% ;
    text-align: center;
+   z-index: 5000;
 }
 
 /* Links inside the navbar */
@@ -33,15 +49,28 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: medium;
+  
 }
 
 .navbar button {
   font-size:12px;
   color: #f7711d;
-
+  height: 50px;
+  
 
 }
 
+
+button{
+  width: 24%;
+
+}
+
+.material-icons {
+  font-size: x-small;
+  vertical-align: middle;
+
+}
 
 /* Change background on mouse-over */
 .navbar a:hover {
@@ -49,9 +78,16 @@
   color: black;
 }
 
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
 /* adds a space from the nav bar so that it does not ovelap */
  .main {
-  margin-top: 0px; 
+  margin-top: 30px; 
 } 
 
 /* end of nbar */
@@ -59,16 +95,31 @@
   /* display command on #map is what make it center */
   .map-container {
     text-align: center;
+    /* position: relative; */
+    z-index: -1;
   }
 
   #map {
     height: 350px;
     width: 100%;
-    position: relative; 
+      
     display: inline-block; 
+    
+  }
+  .justifyright{
+    text-align: right;
+    font-size: smaller;
+    font-style: italic;
+    color: whitesmoke;
   }
   
-  
+  .justifyCenter{
+    text-align: center;
+    font-size: smaller;
+    font-style: italic;
+    color: whitesmoke;
+  }
+
 .rotate1S{
 max-height: 200px;
 max-width: 120px;
@@ -95,10 +146,6 @@ max-width: 120px;
     margin-top: 50px;
     } */
     
-/* Main content */
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
-}
 
 /*  for image gallery */
 
@@ -136,14 +183,19 @@ max-width: 120px;
 /* end of image gallery */
 
 
+
   .ppcont{width:200px;}
 
-  .closing{background-color: #199b55}
+.closing{background-color: #199b55;
+  padding:30px;
+}
 .title {
-font-size: 1cm;
-text-align: center;
-font-size:5vw;
-font-stretch: condensed;
+        font-size: 1cm;
+        text-align: center;
+        font-size:5vw;
+        font-stretch: condensed;
+        /* position: absolute; */
+        z-index: -1;
 
 }
 
@@ -161,12 +213,14 @@ font-stretch: condensed;
   /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
   .wrapper {
     position: relative;
-    min-height: 100%;
-    padding-bottom: 130px;
+    /* min-height: 100%; */
+    padding-bottom: 20px;
     overflow: auto;
     background-image: url("/static/Images/StaticPics/background-stripes.png");
   }
   
+ 
+
   /* The footer is positioned at the bottom of the page */
   .footer {
     position: absolute;
@@ -276,23 +330,21 @@ font-stretch: condensed;
       cursor: pointer;
     }
     .title {
-    font-size: medium;
+    font-size: large;
       
     }
   }
   
   /* keyframe animations which will be used to animate the title */
-  @keyframes title {
-    from {color: #14403A;
-      ont-size: 1rem;
-    }
-    to {color:#f7711d;
-      /* font-size: 5.5rem; */
-      font-size:4vw;
-      opacity: 1;
-    
-    }
-  }
+   @keyframes 
+  
+            title {
+                  from {color: #f7711d;
+                  font-size: 1rem;}
+                  to {color:whitesmoke;
+                  font-size:4vw;
+                  opacity: 1;}
+                  } 
   
   @keyframes smaller-title {
     from {
@@ -305,15 +357,6 @@ font-stretch: condensed;
     }
   }
   
-  @keyframes subtitle {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
  /* The element to apply the animation to */
   /* @keyframes example {
     0%   {left:0px; top:0px;}
