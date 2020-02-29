@@ -9,6 +9,7 @@
     height: 100%; 
     padding: 0;
     margin: 0;
+    background-color:#199b55 ;
       /* background-image: url("/static/Images/StaticPics/background-stripes.png");  */
     }
 
@@ -21,9 +22,6 @@ text-align: right;
 text-align-last: right;
 }
 
-.bottom a { align-content: right;
-  text-align: right;
- }
   
 
 
@@ -66,6 +64,21 @@ button{
 
 }
 
+
+.button2{
+  height: 35px;
+  width: 90%;
+  color:#f7711d;
+  box-shadow: #f7711d;
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+  border-radius: 12px;
+
+  
+  
+
+}
 .material-icons {
   font-size: x-small;
   vertical-align: middle;
@@ -119,32 +132,27 @@ button{
     font-style: italic;
     color: whitesmoke;
   }
+/* 
+    .rotate1S{
 
-.rotate1S{
-max-height: 200px;
-max-width: 120px;
+    max-height: 25%;
+    max-width: 25%;
 
-}
+    } */
   .rotate {
     -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
     margin-top: 65px;
       }
-    .thumbnail {background-color:#f7711d;
-                width: 120px;
-                min-width: 120px;
-              max-height:200px;
+     .thumbnail {background-color:#f7711d;
+                width: 200px;
+                min-width: 200px;
+              max-height:500px; 
               
     position: relative; 
             
     display: inline-block;}
-/* 
-    .gallery {max-height:200px;
-    max-width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    } */
     
 
 /*  for image gallery */
@@ -184,7 +192,7 @@ max-width: 120px;
 
 
 
-  .ppcont{width:200px;}
+.ppcont{width:200px;}
 
 .closing{background-color: #199b55;
   padding:30px;
@@ -199,17 +207,6 @@ max-width: 120px;
 
 }
 
-.legend {
-  line-height: 18px;
-  color: white;
-}
-.legend i {
-  width: 16px;
-  height: 16px;
-  float: left;
-  margin-right: 6px;
-  opacity: 1;
-}
   /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
   .wrapper {
     position: relative;
@@ -218,43 +215,6 @@ max-width: 120px;
     overflow: auto;
     background-image: url("/static/Images/StaticPics/background-stripes.png");
   }
-  
- 
-
-  /* The footer is positioned at the bottom of the page */
-  .footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    min-height: 100px;
-    background: #696b6d;
-  }
-  
-  /* The code styles the text at the bottom of the footer */
-  .footer > .bottom {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 5px;
-    background: #3d3e3f;
-  }
-/*   
-  .navbar {
-    padding: 5px;
-    margin: 0;
-    background-image: url("/static/Images/StaticPics/background-stripes.png");
-  } */
-  
-  /* This CSS styles the ufo icon in the navbar
-  .nav-ufo {
-    position: absolute;
-    bottom: 5px;
-    left: 150px;
-    width: 35px;
-    color: white;
-  } */
   
   
   /* The styles for the parallax */
@@ -272,9 +232,6 @@ max-width: 120px;
      background-size: 1500px 500px;
      background-repeat: no-repeat; 
   }
- .footer h8{color: white;}
- .icon {color: white;}
-
   
 .title{animation: title 2s forwards linear;
   font-size: 30px;}
