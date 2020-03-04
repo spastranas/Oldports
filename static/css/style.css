@@ -11,7 +11,8 @@
     padding: 0;
     margin: 0;
     background-color:#199b55 ;
-      /* background-image: url("/static/Images/StaticPics/background-stripes.png");  */
+    overflow-x: hidden;
+    
     }
 
  /* this code fixed twitter to the bottom */
@@ -37,11 +38,11 @@ text-align-last: right;
 /* The navigation bar */
 /* The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order.  */
  .navbar {
-        overflow: hidden;
+         overflow: hidden; 
         background-color: whitesmoke;
         position: fixed; /* Set the navbar to fixed position */
         top: 0; /* Position the navbar at the top of the page */
-        width:105%; 
+        width:100%; 
         text-align: center;
         z-index: 5000;
         white-space: nowrap;
@@ -249,61 +250,45 @@ text-align-last: right;
 
 
   /* media queries which will only be activated at specific screen sizes */
-  @media (max-width: 800px) {
-    #table-area td {
-      font-size: 1em;
-    }
-  }
+ 
   
-  @media (max-width: 500px) {
+  @media (max-width: 1024px) {
 
-  
-    .hero h1 {
-      animation: smaller-title 1.2s forwards linear;
-      color: white;
-    }
+    .navbar {
+     width:104%; 
+     padding-left: 16px;
+     padding-right: 13px;
+     overflow: hidden;
+   }
 
-    .hero {
-      position: relative;
-      height: 80px;
-      /* padding: 20px; */
-      margin: 0;
-      background: black;
-      background-image: url("/static/Images/StaticPics/header.jpg"); 
-      background-attachment: fixed;
-      background-position: top center;
-      /* background-position:bottom center; */
-       /* background-size: cover;  */
-       background-size: 500px 300px;
-       /* background-repeat: no-repeat; */
-    }
-    h3 {
-      font-size: 100%;
-      
-  }
-       /*.col-11 col-sm-12 col-md-6{
-      width: 50 px;
-
-    } */
-
-    #map {
-      height: 350px;
-      width: 400px;
-      /* height: 400px;
-      width: 350px; */
-    }
-    .column img {
-      opacity: 1;
-      max-width: 80px;
-      height: 80px;
-      cursor: pointer;
-    }
     .title {
     font-size: large;
       
     }
   }
   
+
+  @media (max-width: 375px) {
+
+    .navbar {
+     width:105%; 
+     padding-left: 16px;
+     padding-right: 15px;
+     overflow: hidden;
+   }
+
+    .title {
+    font-size: large;
+      
+    }
+  }
+
+
+
+
+
+
+
   /* keyframe animations which will be used to animate the title */
    @keyframes 
   
