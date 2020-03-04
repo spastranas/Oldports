@@ -16,17 +16,17 @@
          console.log("test created variables:")
          console.log(FileAddress);
 
-             var ElementForAddress = d3.select("#LatestPic");//select the html element where we will append
+            //  var ElementForAddress = d3.select("#LatestPic");//select the html element where we will append
              var ElementForPicturedata = d3.select("#Picturedata");//select the html element where we will append
          
             // clear
-             ElementForAddress.selectAll("h3").remove();
-             ElementForPicturedata.selectAll("h3").remove();
+            //   ElementForAddress.selectAll("h3").remove();
+              ElementForPicturedata.selectAll("h3").remove();
 
 
          // add to html
-             var AddressCell = ElementForAddress.append("h3");
-             AddressCell.text(" #Oldports found, captured and discarded: " + index);
+            //   var AddressCell = ElementForAddress.append("h3");
+            //  AddressCell.text(" #Oldports found, captured and discarded: " + index);
                    
             d3.select(".img-gallery").selectAll("div")
             .data(GetPicDetails)

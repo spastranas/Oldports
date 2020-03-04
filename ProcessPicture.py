@@ -68,39 +68,42 @@ def get_coordinates(geotags):
 # Funtion 5
 
 def get_location(geotags):
-    coords = get_coordinates(geotags)
+    if "GPSLatitude" in geotags:
+        
+        coords = get_coordinates(geotags)
+        uri = 'https://reverse.geocoder.api.here.com/6.2/reversegeocode.json'
+        headers = {}
+        params = {
+            'app_id': 'cjIyVcZ1rzUhd0Xb9r0q',
+            'app_code': 'f9pU60MvwiOVXVRl5N5HmA',
+            'prox': "%s,%s" % coords,
+            'gen': 9,
+            'mode': 'retrieveAddresses',
+            'maxresults': 1,
+        }
 
-    uri = 'https://reverse.geocoder.api.here.com/6.2/reversegeocode.json'
-    headers = {}
-    params = {
-        'app_id': 'cjIyVcZ1rzUhd0Xb9r0q',
-        'app_code': 'f9pU60MvwiOVXVRl5N5HmA',
-        'prox': "%s,%s" % coords,
-        'gen': 9,
-        'mode': 'retrieveAddresses',
-        'maxresults': 1,
-    }
-
-    response = requests.get(uri, headers=headers, params=params)
-    try:
-        response.raise_for_status()
+        response = requests.get(uri, headers=headers, params=params)
         return response.json()
+    
+    else: 
+        
+        response={'Response': { 'View':[{ 'Result': [{'Location': {'MapReference':{ 'MapReleaseDate':''}, 'DisplayPosition': {'Latitude': 0, 'Longitude': 0},'MapView': {'TopLeft': {'Latitude': 0, 'Longitude': 0},'BottomRight': {'Latitude': 0, 'Longitude': 0}},'Address': {'Label': 'Unkown','Country': 'USA','State': '','County': 'Unkown','City': 'Unkown','District': 'Unkown','PostalCode': '0'}}}]}]} }
+        return response
 
-    except requests.exceptions.HTTPError as e:
-        print(str(e))
-        return {}
-
-# FUnction 6 to shrik pictures
+# FUnction 6 to shrik and rotate pictures
 def make_thumbnail(filename):
     img = Image.open(filename)
+    img.thumbnail((400,400))
 
     (width, height) = img.size
     if width > height:
-        ratio = 1200.0 / width
+        upImage = img.rotate(90, expand=True)
+        
     else:
-        ratio = 1200.0 / height
+        upImage = img
 
-    img.thumbnail((round(width * ratio), round(height * ratio)), Image.LANCZOS)
+    upImage.thumbnail((400,400))
+    #img.thumbnail((round(width * ratio), round(height * ratio)), Image.LANCZOS)
     img.save(filename)
 # ____________________________________________________________________________________________________________________________________#
 
