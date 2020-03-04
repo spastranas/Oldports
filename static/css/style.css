@@ -7,6 +7,7 @@
   html,
   body {
     height: 100%; 
+    width: 100%;
     padding: 0;
     margin: 0;
     background-color:#199b55 ;
@@ -14,7 +15,8 @@
     }
 
  /* this code fixed twitter to the bottom */
-.fullContainer{position: relative;}
+.fullContainer{position: relative;
+              width: 100%;}
 .bottom{position: fixed;;
 bottom: 0;
 align-content: right;
@@ -39,18 +41,21 @@ text-align-last: right;
         background-color: whitesmoke;
         position: fixed; /* Set the navbar to fixed position */
         top: 0; /* Position the navbar at the top of the page */
-        width: 105% ; 
+        width:105%; 
         text-align: center;
         z-index: 5000;
+        white-space: nowrap;
+        padding-left: 16px;
+        padding-right: 13px;
       }
 
       /* Links inside the navbar */
       .navbar a {
-        float: left;
+        /* float: left; */
         display: block;
         color: #f7711d;
         text-align: center;
-        padding: 14px 16px;
+        /* padding: 14px 16px; */
         text-decoration: none;
         font-size: medium;
         
@@ -66,13 +71,13 @@ text-align-last: right;
 
       /*index nav bar button  */
       button{
-        width: 24%;
+        width: 25%;
 
       }
            
         /*icons for the buttons  */
 
-      }
+      
       .material-icons {
         font-size: x-small;
         vertical-align: middle;
@@ -86,11 +91,11 @@ text-align-last: right;
       }
 
       /* The sticky class is added to the header with JS when it reaches its scroll position */
-      .sticky {
+      /* .sticky {
         position: fixed;
         top: 0;
-        width: 100%
-      }
+        width: 100% 
+      } */
 
 
 /* end of nbar */
@@ -187,36 +192,15 @@ text-align-last: right;
     font-style: italic;
     color: whitesmoke;
   }
-/* 
-    .rotate1S{
-
-    max-height: 25%;
-    max-width: 25%;
-
-    } */
-  .rotate {
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
-    margin-top: 65px;
-      }
-     .thumbnail {background-color:#f7711d;
-                width: 200px;
-                min-width: 200px;
-              max-height:500px; 
-              
-    position: relative; 
-            
-    display: inline-block;}
-    
 
 
 
 
-.ppcont{width:200px;}
+/* .ppcont{width:200px;} */
 
 .closing{background-color: #199b55;
-   padding:30px; 
+  width: 100%;
+  padding-top:30px;  
 }
 .title {
         font-size: 1cm;
@@ -229,22 +213,6 @@ text-align-last: right;
 }
 
   
-  
-  /* The styles for the parallax */
-  .hero {
-    position: relative;
-    height: 220px;
-    /* padding: 220px;  */
-    margin: 0;
-    background: black;
-    background-image: url("/static/Images/StaticPics/header.jpg"); 
-    background-attachment: fixed;
-    background-position: top center;
-    /* background-position:bottom center; */
-     /* background-size: cover;  */
-     background-size: 1500px 500px;
-     background-repeat: no-repeat; 
-  }
   
 .title{animation: title 2s forwards linear;
   font-size: 30px;}
@@ -263,7 +231,18 @@ text-align-last: right;
   vertical-align: top;
   display: inline-block;
   border-radius: 12px;
+ }
 
+    .thumbnail {
+     border-radius: 15px; 
+     background-color:#f7711d;
+     /* position: relative;   */
+     display: inline-block; 
+  }
+  .LastUpload{
+   border-radius: 15px;
+
+  }
 
 
 
