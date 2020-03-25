@@ -15,31 +15,6 @@
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-<style>
- 
-
-        #myProgress {
-          width: 90%;
-          background-color: #ddd;
-        }
-        
-        #myBar {
-          width: 1%;
-          height: 30px;
-          background-color: #4CAF50;
-        }
-        .title {
-font-size: 1cm;
-text-align: center;
-font-size:2vw;
-font-stretch: condensed;
-
-}
-.most{text-align: center;}
-
-   
-        </style>
-
 
 
     </head>
@@ -84,11 +59,13 @@ font-stretch: condensed;
                   <form action="/upload-image" method="POST" enctype="multipart/form-data">
             
                     <div class="form-group">
-                        <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="image" id="image">
-                        <!-- <label class="custom-file-label" for="image">Select image...</label> -->
-                      </div>
-                    </div>
+
+
+
+                      <input type="file" name="file" id="file" class="inputfile" />
+                      <label for="file"><i class="material-icons">add_a_photo</i> Photo&nbsp&nbsp&nbsp<span class="name"></span></label>
+
+                  
                     <!-- <table style="width:100%"> -->
                       <table>
                       <col width="100">
@@ -100,7 +77,7 @@ font-stretch: condensed;
                       </tr> 
                       <tr>
                         <td>
-                          <button onclick="move()" type="submit" class="button2"><i class="material-icons">cloud_upload</i>Upload</button>
+                          <button onclick="move()" type="submit" class="button2"><i class="material-icons">cloud_upload</i> Upload</button>
                         </td>
                         <td><div id="myProgress">   <div id="myBar"></div> </div> </td>
                                               

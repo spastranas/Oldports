@@ -96,7 +96,7 @@ def make_thumbnail(filename):
     img.thumbnail((400,400))
 
     (width, height) = img.size
-    if width > height:
+    if width < height:
         upImage = img.rotate(90, expand=True)
         
     else:

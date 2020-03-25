@@ -197,7 +197,6 @@ text-align-last: right;
 
 
 
-/* .ppcont{width:200px;} */
 
 .closing{background-color: #199b55;
   width: 100%;
@@ -232,6 +231,7 @@ text-align-last: right;
   vertical-align: top;
   display: inline-block;
   border-radius: 12px;
+  font-weight: 700;
  }
 
     .thumbnail {
@@ -245,8 +245,66 @@ text-align-last: right;
 
   }
 
+/* upload picture  format */
+
+/* hide default input button */
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+/* format label to act as a button */
+.inputfile + label {
+  font-size: smaller;
+  font-weight: 700;
+  
+  background-color: whitesmoke;
+  display: inline-block;
+
+  height: 35px;
+  color:#f7711d;
+  /* box-shadow: #f7711d; */
+  text-align: center;
+  vertical-align: center;
+  display: inline-block;
+  border-radius: 12px;
+  padding: 7px;
+  box-shadow: gray;
 
 
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color:rgb(189, 186, 186);
+}
+
+
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+
+
+/* progress bar */
+
+
+
+#myProgress {
+  width: 90%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #4CAF50;
+  border-radius: 12px;
+}
 
 
   /* media queries which will only be activated at specific screen sizes */
